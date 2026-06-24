@@ -85,3 +85,6 @@ def predict_churn(customer: NewCustomerData):
         "churn_risk_flag": is_churn_risk,
         "risk_tier": risk_tier
     }
+@app.get("/")
+def home():
+    return {"message": "Telco Churn API Running"}
