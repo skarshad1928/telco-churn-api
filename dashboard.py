@@ -87,7 +87,7 @@ st.markdown("---")
 if st.button("🚀 Run Risk Analysis Profile", use_container_width=True):
     try:
         # Route request payload directly to your running FastAPI backend port
-        response = requests.post("http://127.0.0.1:8000/predict", json=payload)
+        response = requests.post("https://telco-churn-api-gbyx.onrender.com/predict", json=payload)
         response.raise_for_status()
         result = response.json()
         
