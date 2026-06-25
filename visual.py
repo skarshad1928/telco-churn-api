@@ -9,7 +9,7 @@ import plotly.express as px
 # --------------------
 # Load Data
 # --------------------
-df = pd.read_excel("data/Telco_customer_churn.xlsx")
+df = pd.read_excel("Telco_customer_churn.xlsx")
 df.columns = df.columns.str.strip()
 
 # --------------------
